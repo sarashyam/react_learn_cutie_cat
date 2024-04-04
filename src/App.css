@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.greeting{
+  color: cadetblue;
+}
+.head{
+  color: greenyellow;
+  background-color: blanchedalmond;
+}
+
