@@ -83,6 +83,10 @@ export default function Navbar(props) {
             </li>
           </ul>
         </div>
+        <div className='Red_button'>
+          <button type="button" className="btn btn-danger" onClick={props.red_theme}>Red Theme</button>
+        </div>
+
         <div className="form-check form-switch">
           <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
           {/* <input className="form-check-input" onClick={handleToggle} type="checkbox" role="switch" id="flexSwitchCheckDefault"/> */}
