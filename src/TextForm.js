@@ -46,21 +46,21 @@ return(
             {/* <label htmlFor="floatingTextarea">Enter text here</label> */}
         </div>
         <br/>
-        <button type="button" className="btn btn-info" onClick={hadleUpClick}>Convert to upper case</button>
-        <button type="button" className="btn btn-success" onClick={hadlDownClick}>Convert to lower case</button>
-        <button type="button" className="btn btn-success" onClick={handle_rm_space}>Remove extra white spaces</button>
-        <button type="button" className="btn btn-success" onClick={handle_replace_billa}>Make billi to billa</button>
+        <button type="button" className={props.theme_color} onClick={hadleUpClick}>Convert to upper case</button>
+        <button type="button" className={props.theme_color} onClick={hadlDownClick}>Convert to lower case</button>
+        <button type="button" className={props.theme_color} onClick={handle_rm_space}>Remove extra white spaces</button>
+        <button type="button" className={props.theme_color} onClick={handle_replace_billa}>Make billi to billa</button>
     </div>
     
-    <div className="container my-5">
+    <div className="container my-5 text-pink">
         
-        <h4> Words and Character typed</h4>
-        <p> No of words : - {text.split(" ").length}</p>
-        <p>No of Characters: - {text.length}</p>
-        <p>Time to read a single character = 0.0008</p>
-        <p>Time taken to read this portion = {text.length * 0.0008}</p>
-        <h5>The text you typed</h5>
-        <p>{text}</p>
+        <h4 className='text-pink'> Words and Character typed</h4>
+        <p className='text-pink'> No of words : - {text.split(" ").length}</p>
+        <p className='text-pink'>No of Characters: - {text.length}</p>
+        <p className='text-pink'>Time to read a single character = 0.0008</p>
+        <p className='text-pink'>Time taken to read this portion = {text.length * 0.0008}</p>
+        <h5 className='text-pink'>The text you typed</h5>
+        <p className='text-pink'>{text}</p>
 
 
     </div>
